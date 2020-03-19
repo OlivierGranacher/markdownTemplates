@@ -1,0 +1,4 @@
+name: DTE_template
+description: >
+   R markdown template for DTE connection with examples
+create_dir: FALSE

@@ -1,0 +1,14 @@
+Package: markdownTemplates
+Title: Markdown Templates
+Version: 0.2
+Authors@R: 
+    person(given = "Olivier",
+           family = "Granacher",
+           role = c("aut", "cre"),
+           email = "olivier.granacher@trimet.fr",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Provides templates for R markdown documents.
+License: proprietary
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
