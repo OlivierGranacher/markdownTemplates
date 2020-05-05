@@ -12,10 +12,11 @@ output:
     toc: yes
     toc_float: yes
     code_folding: hide
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, include = F, eval = T, message = F, warning = F, fig.asp = 0.4, fig.path = 'Figs/')
+knitr::opts_chunk$set(echo = T, include = F, eval = T, message = F, warning = F, cache = T)
 ggplot2::theme_set(ggplot2::theme_minimal())
 ```
 

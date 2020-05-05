@@ -9,10 +9,11 @@ output:
     toc: yes
     toc_float: yes
     code_folding: hide
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, fig.asp = 0.6, fig.path = 'Figs/')
+knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = T)
 ```
 
 # Query example 
