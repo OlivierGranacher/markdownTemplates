@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F,
 ```
 
 ```{r parameter}
-  date_deb <- '2020-01-01' 
+  date_deb <- '20200111' 
 ```
 
 ## Query with parameter date
@@ -67,7 +67,7 @@ sql <- "select
                      'F016', '2019-21-03 09:00:00',  '2019-24-03 00:10:00',
                      'F018', '2019-11-04 16:00:00',  '2019-13-04 21:10:00'
                  )
-  try(dplyr::db_drop_table(conn, "##events"), silent = T)
+  try(dplyr::db_drop_table(conn, "#events"), silent = T)
   dplyr::copy_to(conn, 
         events,
         temporary = T,
@@ -79,7 +79,7 @@ select
  e.cod_cuve,
  t.dat,
  t.hm 
-from tab_jour t, ##events e 
+from tab_jour t, #events e 
 where e.cod_cuve=t.cod_cuve 
  and t.dat between e.start and e.stop
 ```
