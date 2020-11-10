@@ -1,0 +1,25 @@
+---
+title: "ioslides"
+author: "OG"
+date:  '`r format(Sys.time(), "%d %B %Y")`'
+output: 
+  ioslides_presentation:
+   widescreen: true  
+   slide_level: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = T, fig.width = 9, fig.height = 5)
+```
+
+
+## Section 1 
+
+
+### Slide 1 
+
+- a
+- b
+
+
+
