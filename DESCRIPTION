@@ -1,6 +1,6 @@
 Package: markdownTemplates
-Title: Markdown Templates
-Version: 0.5
+Title: Custom Markdown Templates
+Version: 0.6
 Authors@R: 
     person(given = "Olivier",
            family = "Granacher",
@@ -12,3 +12,6 @@ License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Imports: 
+    ggplot2,
+    knitr

@@ -16,11 +16,12 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, include = F, eval = T, message = F, warning = F, cache = T)
+knitr::opts_chunk$set(echo = T, include = F, eval = T, message = F, warning = F, cache = F)
 ggplot2::theme_set(ggplot2::theme_light())
 ```
 
 # Custom theme {.tabset}
+
 ```{r theme_plot}
   theme_graphs <- function(base_size = 12,
                       base_family = "",
@@ -35,4 +36,5 @@ ggplot2::theme_set(ggplot2::theme_light())
 }
 ```
 
-Intensite G  : `r params$Intensite_G`
+Intensite G : `r params$Intensite_G`
+

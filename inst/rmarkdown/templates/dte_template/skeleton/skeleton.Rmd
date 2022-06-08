@@ -1,6 +1,6 @@
 ---
 title: "DTE connection"
-author: "Your Name"
+author: "OG"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   html_document:
@@ -13,12 +13,13 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = T)
+knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = F)
 ```
 
-# Query example 
+# Query example
 
 ## DTE connection
+
 ```{r connection}
   conn <- elr::dbConnect.dte()
 ```
@@ -28,6 +29,7 @@ knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F,
 ```
 
 ## Query with parameter date
+
 ```{sql connection=conn, output.var="data"}
 select 
  substring(cod_cuve, 1, 1) serie,

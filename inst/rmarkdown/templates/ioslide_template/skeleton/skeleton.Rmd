@@ -12,35 +12,32 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = T, fig.width = 9, fig.height = 5)
+knitr::opts_chunk$set(echo = F, include = F, eval = T, message = F, warning = F, cache = F, fig.width = 9, fig.height = 5)
 ```
 
+# Section 1
 
-# Section 1 
+## Slide 1
 
+Sample text for slide 1
 
-## Slide 1 
-
-Sample text for slide 1 
-
-- a
-    + a1
-    + a2
-- b
+-   a
+    -   a1
+    -   a2
+-   b
 
 ## Slide 2: text color {.blue}
 
-This is text using CSS formating in the style.css file. 
-<div class = "red"> This text is formated with a div tag </div>
+This is text using CSS formating in the style.css file.
 
+::: red
+This text is formated with a div tag
+:::
 
 ## Slide 3: 2 columns
 
-<div class = "columns-2">
-
+::: columns-2
     ![image](trimetLogo.png)
-    
+
     Text 2
-
-
-</div>
+:::
